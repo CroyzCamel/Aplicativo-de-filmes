@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40161302448",
+    "project_id": "aplicativo-de-filmes-950d6",
+    "storage_bucket": "aplicativo-de-filmes-950d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40161302448:android:86b853e86b21fde5b1e875",
+        "android_client_info": {
+          "package_name": "com.agenda.aplicativodefilmes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6UIRLLqh75mATMKoK9rpsuq6XdijTC3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
