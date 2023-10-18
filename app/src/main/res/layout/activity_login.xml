@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@color/bege_100"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -15,19 +15,19 @@
     tools:context=".view.LoginActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_logo" />
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_logo"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FLIXNET"
-        android:textSize="22sp"
-        android:textColor="@color/dark_blue"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-smallcaps"
-         />
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/name_logo"
+        android:textColor="@color/navy"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editLayoutEmail"
@@ -35,13 +35,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="50dp"
-        android:background="@color/gray"
+        android:background="@color/bege_100"
         app:startIconDrawable="@drawable/ic_email"
-        app:startIconTint="@color/dark_blue"
-        app:hintTextColor="@color/light_blue"
+        app:startIconTint="@color/navy"
+        app:hintTextColor="@color/navy"
         app:helperTextTextColor="@color/red_900"
         app:helperTextEnabled="true"
-        app:helperTextTextAppearance="@drawable/ic_logo"
+        app:endIconMode="clear_text"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -49,9 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:hint="Email"
+            android:hint="@string/email_padrao"
             android:inputType="textEmailAddress"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/bege_100"
             android:textColorHint="@color/dark_black"
             app:helperTextEnabled="true"/>
 
@@ -63,12 +63,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="50dp"
-        android:background="@color/gray"
+        android:background="@color/bege_100"
         app:startIconDrawable="@drawable/ic_senha"
-        app:startIconTint="@color/dark_blue"
+        app:startIconTint="@color/navy"
         app:endIconCheckable="true"
         app:endIconMode="password_toggle"
-        app:endIconTint="@color/dark_blue"
+        app:endIconTint="@color/navy"
         app:hintTextColor="@color/light_blue"
         app:helperTextTextColor="@color/red_900"
         app:helperTextEnabled="true"
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:hint="Senha"
+            android:hint="@string/senha_padrao"
             android:textColorHint="@color/dark_black"
             android:inputType="numberPassword"
             app:helperTextEnabled="true"/>
@@ -92,12 +92,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="50dp"
-        android:text="Entrar"
+        android:text="@string/bt_entrar"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         android:padding="10dp"
-        android:backgroundTint="@color/dark_blue"
+        android:backgroundTint="@color/navy"
         style="@style/Animation.Design.BottomSheetDialog"/>
 
     <LinearLayout
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
            android:layout_marginEnd="10dp"
             android:gravity="center"
-            android:text="Não tem conta?"
+            android:text="@string/nao_tem_conta_login"
             android:textSize="14sp" />
 
         <TextView
@@ -120,10 +120,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Clique Aqui "
+            android:text="@string/clique_aqui_login"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/navy"/>
 
     </LinearLayout>
 </LinearLayout>

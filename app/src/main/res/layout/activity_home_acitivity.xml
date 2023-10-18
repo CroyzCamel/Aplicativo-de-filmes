@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bege_100"
     tools:context=".view.HomeAcitivity">
 
     <LinearLayout
         android:id="@+id/LayoutHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_blue"
+        android:background="@color/navy"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +24,9 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="FLIXNET"
-            android:textColor="@color/red_900"
+            android:fontFamily="@font/bebas_neue"
+            android:text="@string/name_logo"
+            android:textColor="@color/bege_200"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -34,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="8dp"
-            android:text="Séries"
+            android:text="@string/series"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="8dp"
-            android:text="Filmes"
+            android:text="@string/filmes"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="8dp"
-            android:text="Categoria"
+            android:text="@string/categoria"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -65,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="8dp"
-            android:text="Sair"
+            android:text="@string/sair"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -85,7 +86,7 @@
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:visibility="visible"
-        android:background="@color/white"
+        android:background="@color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:indeterminateTint="@color/dark_blue"
+        android:indeterminateTint="@color/navy"
         android:visibility="visible"
         app:layout_constraintTop_toTopOf="@id/containerProrgessbar"
         app:layout_constraintStart_toStartOf="@id/containerProrgessbar"
@@ -106,7 +107,7 @@
         android:id="@+id/txtCarregando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Carregando..."
+        android:text="@string/carregando_progress_bar"
         android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintTop_toTopOf="@id/containerProrgessbar"
