@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Aplicativo de Filmes</string>
+    <string name="name_logo">META FILMES</string>
+    <string name="drescricao_mega_filme">MEGA FILMES</string>
+    <string name="email_padrao">Email</string>
+    <string name="senha_padrao">Senha</string>
+
+    <!-- String Cadastro-->
+    <string name="bt_Cadastrar_cadastro">Cadastrar</string>
+    <string name="click_entrar_cadastro">ENTRAR</string>
+    <string name="introducao_1_cadastro">Bora começar a assitir \n o melhor?</string>
+    <string name="drescricao_2_cadastro">Coloca o e-mail e senha abaixo ai</string>
+    <string name="descricao_3_cadastro">Bora Lá?</string>
+
+    <!-- Strings Detalhes Filmes -->
+    <string name="descricao_filme_detalhes_filme">Filme</string>
+    <string name="descricao_add_lista_detalhes_filme">Adicionar a lista</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="bt_assistir">Assistir</string>
+    <string name="saiba_mais">Saiba Mais</string>
+
+    <!-- Strings Home-->
+    <string name="series">Séries</string>
+    <string name="filmes">Filmes</string>
+    <string name="categoria">Categoria</string>
+    <string name="sair">Sair</string>
+    <string name="carregando_progress_bar">Carregando…</string>
+    <!-- Strings Login -->
+    <string name="bt_entrar">Entrar</string>
+    <string name="nao_tem_conta_login">Não tem conta?</string>
+    <string name="clique_aqui_login">Clique Aqui</string>
+    <string name="categoria_filme">Filmes Polulares</string>
 </resources>

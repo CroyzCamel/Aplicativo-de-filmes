@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true">
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/bege_100"
     tools:context=".view.DetalhesFilme">
 
     <ImageView
@@ -16,17 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
+        android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/descricao_filme_detalhes_filme" />
 
     <TextView
         android:id="@+id/txtNomeFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asdas"
+        android:text=""
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/navy"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/capaDoFilme"
@@ -41,7 +43,8 @@
         android:layout_marginStart="50dp"
         android:src="@drawable/ic_add_lista"
         app:layout_constraintTop_toBottomOf="@id/txtNomeFilme"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/descricao_add_lista_detalhes_filme" />
 
     <TextView
         android:id="@+id/txtMinhaLista"
@@ -49,9 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="15dp"
-        android:text="Minha Lista"
+        android:text="@string/minha_lista"
         android:textSize="16sp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/navy"
         app:layout_constraintTop_toBottomOf="@id/ic_add"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btAssistir" />
@@ -62,14 +65,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="10dp"
-        android:text="Assistir"
+        android:text="@string/bt_assistir"
         android:textSize="16sp"
-        android:textColor="@color/dark_blue"
-        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/navy"
         android:drawableLeft="@drawable/ic_play_filme"
         app:layout_constraintEnd_toStartOf="@id/txtSaibaMais"
         app:layout_constraintTop_toBottomOf="@id/txtNomeFilme"
-        app:layout_constraintStart_toEndOf="@id/txtMinhaLista" />
+        app:layout_constraintStart_toEndOf="@id/txtMinhaLista"
+        tools:ignore="RtlHardcoded" />
 
     <ImageView
         android:id="@+id/ic_info_filme"
@@ -82,7 +86,8 @@
         app:layout_constraintStart_toEndOf="@id/btAssistir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtNomeFilme"
-        app:constraintSet="@id/btAssistir"/>
+        app:constraintSet="@id/btAssistir"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/txtSaibaMais"
@@ -90,9 +95,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="40dp"
-        android:text="Saiba Mais"
+        android:text="@string/saiba_mais"
         android:textSize="16sp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/navy"
         app:layout_constraintTop_toBottomOf="@id/ic_info_filme"
         app:layout_constraintStart_toEndOf="@id/btAssistir"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -105,7 +110,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textSize="16sp"
-        android:textColor="@color/black"
+        android:textColor="@color/navy"
         android:textStyle="bold"
         android:gravity="start"
         app:layout_constraintTop_toBottomOf="@id/btAssistir"
@@ -120,15 +125,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textSize="16sp"
-        android:textColor="@color/black"
+        android:textColor="@color/navy"
         android:gravity="start"
         app:layout_constraintTop_toBottomOf="@id/txtDescricao"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
-
-    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
