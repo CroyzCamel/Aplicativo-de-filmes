@@ -2,15 +2,14 @@
 O projeto é baseado em um aplicativo simples de filmes com foco em aplicar as habilidades aprendidas. tem como finalidade também aprender e implementar na prática conhecimetos adquiridos durante os estudos.
 ------------
 ## Índice.
-[Layouts do projeto](Layouts-do-projeto.)
+[Layouts do projeto](https://github.com/CroyzCamel/Aplicativo-de-filmes/edit/master/README.md#layouts-do-projeto)
 
-[Principais técnicase funcionalidades](Principais-técnicas-e-funcionalidades)
-
+[Principais técnicase funcionalidades](https://github.com/CroyzCamel/Aplicativo-de-filmes/edit/master/README.md#principais-t%C3%A9cnicas-e-funcionalidades)
 [Principais técnicas e funcionalidade](Principais-técnicas-e-funcionalidades.)
 
-[Navegação das telas](Navegação-das-telas.)
+[Navegação das telas](https://github.com/CroyzCamel/Aplicativo-de-filmes/edit/master/README.md#navega%C3%A7%C3%A3o-das-telas)
 
-[Creditos](Creditos.)
+[Creditos](https://github.com/CroyzCamel/Aplicativo-de-filmes/edit/master/README.md#creditos)
 
 ------------
 #### Layouts do projeto.
