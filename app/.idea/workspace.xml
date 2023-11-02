@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="318e40db-eb77-424e-91cf-0e38a8a306d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/api/RetrofitServices.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/database/Database.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/factory/LoginViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/factory/MoviesViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/factory/RegisterViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/repository/MoviesRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/repository/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/services/LoginListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/services/RegisterListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/viewmodel/LoginViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/viewmodel/MoviesViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/viewmodel/RegisterViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/adapter/AdapterCategoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/adapter/AdapterCategoria.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/adapter/AdapterFilme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/adapter/AdapterFilme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/api/Api.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/model/Categoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/model/Categoria.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/view/CadastroActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/ui/Cadastro/RegisterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/view/DetalhesFilme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/view/DetalhesFilme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/view/HomeAcitivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/ui/Home/HomeAcitivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/view/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agenda/aplicativodefilmes/ui/Login/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_cadastro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_cadastro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_home_acitivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_home_acitivity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2XdWjG1PgZCYFTWBTPYdSMF3Qmi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android.gradle.sync.needed": "true",
+    "cidr.known.project.marker": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="318e40db-eb77-424e-91cf-0e38a8a306d4" name="Changes" comment="" />
+      <created>1698959571714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698959571714</updated>
+    </task>
+    <servers />
+  </component>
+</project>
