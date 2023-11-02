@@ -30,4 +30,8 @@
     <string name="nao_tem_conta_login">Não tem conta?</string>
     <string name="clique_aqui_login">Clique Aqui</string>
     <string name="categoria_filme">Filmes Polulares</string>
+
+    <!--- Detalhes Filmes -->
+    <string name="description">Descrição</string>
+    <string name="cast">Elenco</string>
 </resources>

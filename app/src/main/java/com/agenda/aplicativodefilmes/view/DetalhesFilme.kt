@@ -21,6 +21,7 @@ class DetalhesFilme : AppCompatActivity() {
         val descricao = intent.extras?.getString("descricao")
         val elenco = intent.extras?.getString("elenco")
 
+
         Glide.with(this@DetalhesFilme).load(capa).centerCrop().into(binding.capaDoFilme)
         binding.txtNomeFilme.setText(nome)
         binding.txtDescricao.setText("Descrição: $descricao")

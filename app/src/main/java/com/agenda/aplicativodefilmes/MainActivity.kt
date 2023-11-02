@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.agenda.aplicativodefilmes.databinding.ActivityMainBinding
-import com.agenda.aplicativodefilmes.view.LoginActivity
+import com.agenda.aplicativodefilmes.ui.Login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 

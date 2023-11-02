@@ -20,13 +20,13 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".view.HomeAcitivity"
+            android:name=".ui.Home.HomeAcitivity"
             android:exported="false" />
         <activity
-            android:name=".view.CadastroActivity"
+            android:name=".ui.Cadastro.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".view.LoginActivity"
+            android:name=".ui.Login.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
