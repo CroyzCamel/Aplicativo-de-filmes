@@ -16,6 +16,7 @@ class DetalhesFilme : AppCompatActivity() {
         binding = ActivityDetalhesFilmeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.bege_100)
         val capa = intent.extras?.getString("capa")
         val nome = intent.extras?.getString("nome")
         val descricao = intent.extras?.getString("descricao")

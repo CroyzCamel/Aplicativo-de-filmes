@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.adapter.AdapterCategoria
 import com.agenda.aplicativodefilmes.api.RetrofitServices
 import com.agenda.aplicativodefilmes.databinding.ActivityHomeAcitivityBinding
@@ -33,6 +34,7 @@ class HomeAcitivity : AppCompatActivity() {
         binding = ActivityHomeAcitivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.navy)
         //Progressbar
         binding.progressBar.visibility = View.VISIBLE
         //txtCarregando
