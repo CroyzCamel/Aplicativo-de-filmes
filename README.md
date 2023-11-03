@@ -6,6 +6,12 @@ O projeto é baseado em um aplicativo simples de filmes com foco em aplicar as h
 
 ------------
 #### Layouts do projeto.
+![Inserir um pouquinho de texto](https://github.com/CroyzCamel/Aplicativo-de-filmes/assets/141179127/d5d7c639-447f-4865-8b44-b9aa0c3a1250)
+
+
+
+
+
 ------------
 #### Principais técnicas e funcionalidades.
 - [x] Criação de tela de login.
