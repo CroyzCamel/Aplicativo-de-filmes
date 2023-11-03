@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.ViewModelProvider
+import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.databinding.ActivityLoginBinding
 import com.agenda.aplicativodefilmes.factory.LoginViewModelFactory
 import com.agenda.aplicativodefilmes.repository.UserRepository
@@ -27,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.bege_100)
         //Dar um start inicial diretamente no editEmail
         binding.editEmail.requestFocus()
         viewModel = ViewModelProvider(this, LoginViewModelFactory(UserRepository()))[LoginViewModel::class.java]

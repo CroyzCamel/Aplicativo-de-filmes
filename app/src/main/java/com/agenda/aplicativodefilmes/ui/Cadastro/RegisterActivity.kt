@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.databinding.ActivityCadastroBinding
 import com.agenda.aplicativodefilmes.factory.RegisterViewModelFactory
 import com.agenda.aplicativodefilmes.repository.UserRepository
@@ -24,6 +25,7 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityCadastroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.bege_100)
         //Dar um start inicial diretamente no editEmail
         binding.editEmail.requestFocus()
         viewModel = ViewModelProvider(
