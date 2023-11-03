@@ -34,6 +34,8 @@ class HomeAcitivity : AppCompatActivity() {
         binding = ActivityHomeAcitivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.navy)
+
         //RecyclerViewCategoria
         val recyclerViewCaterogia = binding.recyclerViewCategoria
         recyclerViewCaterogia.layoutManager = LinearLayoutManager(this@HomeAcitivity)
@@ -61,7 +63,7 @@ class HomeAcitivity : AppCompatActivity() {
             override fun onResponse(call: Call<Categorias>, response: Response<Categorias>) {
                if (response.code() == 200) {
                    response.body()?.let {
-                        adapterCategoria.listaCategoria.addAll(it.categorias)
+                       adapterCategoria.listaCategoria.addAll(it.categorias)
                        adapterCategoria.notifyDataSetChanged()
                        //ProgressBar
                        binding.containerProrgessbar.visibility = View.GONE

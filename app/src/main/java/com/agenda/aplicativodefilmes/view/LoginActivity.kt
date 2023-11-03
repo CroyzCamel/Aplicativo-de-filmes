@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
+import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.databinding.ActivityLoginBinding
 import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
@@ -27,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = resources.getColor(R.color.bege_100)
         //Dar um start inicial diretamente no editEmail
         binding.editEmail.requestFocus()
         //inciando Firebase Auth

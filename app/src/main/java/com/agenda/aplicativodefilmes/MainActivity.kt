@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       
+        window.statusBarColor = resources.getColor(R.color.bege_100)
+
         //SplashScreen
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this@MainActivity, LoginActivity::class.java))

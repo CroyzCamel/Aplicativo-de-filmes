@@ -14,12 +14,6 @@
     android:gravity="center"
     tools:context=".view.LoginActivity">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_logo"
-        android:importantForAccessibility="no" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,13 +30,16 @@
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="50dp"
         android:background="@color/bege_100"
+        android:stateListAnimator="@null"
+        android:elevation="20dp"
         app:startIconDrawable="@drawable/ic_email"
         app:startIconTint="@color/navy"
         app:hintTextColor="@color/navy"
         app:helperTextTextColor="@color/red_900"
         app:helperTextEnabled="true"
         app:endIconMode="clear_text"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editEmail"
@@ -64,6 +61,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="50dp"
         android:background="@color/bege_100"
+        android:stateListAnimator="@null"
+        android:elevation="20dp"
         app:startIconDrawable="@drawable/ic_senha"
         app:startIconTint="@color/navy"
         app:endIconCheckable="true"
@@ -98,7 +97,9 @@
         android:textStyle="bold"
         android:padding="10dp"
         android:backgroundTint="@color/navy"
-        style="@style/Animation.Design.BottomSheetDialog"/>
+        android:stateListAnimator="@null"
+        android:elevation="10dp"
+        style="@style/Animation.Design.BottomSheetDialog" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -123,7 +124,9 @@
             android:text="@string/clique_aqui_login"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/navy"/>
+            android:textColor="@color/navy"
+            android:stateListAnimator="@null"
+            android:elevation="20dp"/>
 
     </LinearLayout>
 </LinearLayout>

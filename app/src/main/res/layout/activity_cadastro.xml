@@ -54,7 +54,9 @@
            android:layout_marginStart="125dp"
            android:text="@string/click_entrar_cadastro"
            android:textSize="18sp"
-           android:textStyle="bold" />
+           android:textStyle="bold"
+           android:stateListAnimator="@null"
+           android:elevation="20dp"/>
 
 
     </LinearLayout>
@@ -91,6 +93,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:stateListAnimator="@null"
+        android:elevation="20dp"
         app:helperTextEnabled="true"
         app:helperTextTextColor="@color/red_900"
         app:boxStrokeColor="@color/navy"
@@ -150,6 +154,8 @@
         android:padding="15dp"
         android:backgroundTint="@color/navy"
         android:layout_margin="30dp"
+        android:stateListAnimator="@null"
+        android:elevation="30dp"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
@@ -162,7 +168,9 @@
         android:textColor="@color/white"
         android:padding="15dp"
         android:backgroundTint="@color/navy"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:stateListAnimator="@null"
+        android:elevation="20dp" />
 
 </LinearLayout>
 </ScrollView>
