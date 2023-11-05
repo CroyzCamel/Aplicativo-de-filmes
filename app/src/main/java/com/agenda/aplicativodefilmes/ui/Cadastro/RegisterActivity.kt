@@ -13,11 +13,12 @@ import com.agenda.aplicativodefilmes.factory.RegisterViewModelFactory
 import com.agenda.aplicativodefilmes.repository.UserRepository
 import com.agenda.aplicativodefilmes.ui.Login.LoginActivity
 import com.agenda.aplicativodefilmes.viewmodel.RegisterViewModel
+import org.koin.android.ext.android.inject
 
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCadastroBinding
-    private lateinit var viewModel: RegisterViewModel
+    private val viewModel: RegisterViewModel by inject()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +29,6 @@ class RegisterActivity : AppCompatActivity() {
         window.statusBarColor = resources.getColor(R.color.bege_100)
         //Dar um start inicial diretamente no editEmail
         binding.editEmail.requestFocus()
-        viewModel = ViewModelProvider(
-            this,
-            RegisterViewModelFactory(UserRepository())
-        )[RegisterViewModel::class.java]
 
         binding.btBora.setOnClickListener{
 

@@ -1,3 +1,5 @@
+import java.util.regex.Pattern.compile
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -66,6 +68,9 @@ dependencies {
     //LiveData and ViewModel
     implementation ("androidx.lifecycle:lifecycle-viewmodel:2.6.2")
     implementation ("androidx.lifecycle:lifecycle-livedata:2.6.2")
+    //Koin
+    compile ("io.insert-koin:koin-core:3.5.0")
+    implementation ("io.insert-koin:koin-android:3.5.0")
 
 
 }

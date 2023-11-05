@@ -7,25 +7,23 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.adapter.AdapterCategoria
 import com.agenda.aplicativodefilmes.api.RetrofitServices
 import com.agenda.aplicativodefilmes.databinding.ActivityHomeAcitivityBinding
-import com.agenda.aplicativodefilmes.factory.MoviesViewModelFactory
 import com.agenda.aplicativodefilmes.model.Categoria
-import com.agenda.aplicativodefilmes.repository.MoviesRepository
 import com.agenda.aplicativodefilmes.ui.Login.LoginActivity
 import com.agenda.aplicativodefilmes.viewmodel.MoviesViewModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import org.koin.android.ext.android.inject
 
 class HomeAcitivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeAcitivityBinding
     private lateinit var adapterCategoria: AdapterCategoria
-    private lateinit var viewModel: MoviesViewModel
+    val viewModel: MoviesViewModel by inject()
     private val retrofitService = RetrofitServices.getInstance()
     private var listaCategoria: MutableList<Categoria> = mutableListOf()
 
@@ -53,13 +51,6 @@ class HomeAcitivity : AppCompatActivity() {
         val recyclerViewCategoria = binding.recyclerViewCategoria
         recyclerViewCategoria.layoutManager = LinearLayoutManager(this)
         recyclerViewCategoria.adapter = adapterCategoria
-
-
-
-
-        viewModel = ViewModelProvider(
-            this,
-            MoviesViewModelFactory(MoviesRepository(retrofitService)))[MoviesViewModel::class.java]
 
         observers()
         viewModel.getAllCategorias()
