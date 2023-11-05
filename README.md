@@ -19,8 +19,6 @@ O projeto é baseado em um aplicativo simples de filmes com foco em aplicar as h
 - [x] Refatoração MVVM.
 - [X] Injeção de depêndencia Koin.
 - [X] Injeção de depêndencia ViewModel e LiveData.
-------------
-#### Navegação das telas.
 -------------
 Croyz(em devvolvimento)![image](https://github.com/CroyzCamel/Aplicativo-de-filmes/assets/141179127/a625340d-8186-44e0-b94b-d8087b96416f)
 
