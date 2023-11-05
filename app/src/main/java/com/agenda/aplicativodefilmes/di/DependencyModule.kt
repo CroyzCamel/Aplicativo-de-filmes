@@ -10,21 +10,18 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 object DependencyModule {
-
-
     val loginModule = module {
         factory { UserRepository() }
         viewModel { LoginViewModel(get()) }
     }
-    val  registerModule = module {
+    val registerModule = module {
         factory { UserRepository() }
         viewModel { RegisterViewModel(get()) }
     }
     val homeModule = module {
-        single<RetrofitServices> { RetrofitServices.getInstance() }
+        single { RetrofitServices.getInstance() }
         factory { MoviesRepository(get()) }
         viewModel { MoviesViewModel(get()) }
-
     }
 }
 
