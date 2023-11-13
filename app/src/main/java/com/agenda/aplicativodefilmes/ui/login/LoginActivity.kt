@@ -1,26 +1,23 @@
-package com.agenda.aplicativodefilmes.ui.Login
+package com.agenda.aplicativodefilmes.ui.login
 
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.lifecycle.ViewModelProvider
+import androidx.core.content.ContextCompat
 import com.agenda.aplicativodefilmes.R
 import com.agenda.aplicativodefilmes.databinding.ActivityLoginBinding
-import com.agenda.aplicativodefilmes.factory.LoginViewModelFactory
-import com.agenda.aplicativodefilmes.repository.UserRepository
-import com.agenda.aplicativodefilmes.ui.Cadastro.RegisterActivity
-import com.agenda.aplicativodefilmes.ui.Home.HomeAcitivity
+import com.agenda.aplicativodefilmes.ui.cadastro.RegisterActivity
+import com.agenda.aplicativodefilmes.ui.home.HomeAcitivity
 import com.agenda.aplicativodefilmes.viewmodel.LoginViewModel
+import org.koin.android.ext.android.inject
 
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var viewModel: LoginViewModel
+    private val viewModel: LoginViewModel by inject()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,15 +25,11 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        window.statusBarColor = resources.getColor(R.color.bege_100)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.bege_100)
         //Dar um start inicial diretamente no editEmail
         binding.editEmail.requestFocus()
-        viewModel = ViewModelProvider(this, LoginViewModelFactory(UserRepository()))[LoginViewModel::class.java]
 
-
-        binding.btLogin.setOnClickListener{
-
-
+        binding.btLogin.setOnClickListener {
             val email = binding.editEmail.text.toString()
             val senha = binding.editSenha.text.toString()
 
@@ -45,48 +38,50 @@ class LoginActivity : AppCompatActivity() {
                     binding.editLayoutEmail.helperText = "Coloca o email que tu cadastro!"
                     binding.editLayoutEmail.boxStrokeColor = Color.parseColor("#B71C1C")
                 }
+
                 senha.isEmpty() -> {
-                    binding.editLayoutSenha.helperText = "Coloca aquela senha que tu anotou no cadastro"
+                    binding.editLayoutSenha.helperText =
+                        "Coloca aquela senha que tu anotou no cadastro"
                     binding.editLayoutSenha.boxStrokeColor = Color.parseColor("#B71C1C")
-                } else -> {
-                userLogin(email, senha)
+                }
+
+                else -> {
+                    userLogin(email, senha)
                 }
             }
         }
-
         binding.txtIrCadastro.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
             finish()
         }
-
         observer()
     }
 
-    private fun observer (){
-        viewModel.login.observe(this){login ->
-            if (login){
-                startActivity(Intent(this@LoginActivity,HomeAcitivity::class.java))
+    private fun observer() {
+        viewModel.login.observe(this) { login ->
+            if (login) {
+                startActivity(Intent(this@LoginActivity, HomeAcitivity::class.java))
                 finish()
             }
         }
     }
 
-    private fun userLogin (email:String?, password: String?) {
+    private fun userLogin(email: String?, password: String?) {
         if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
             // Lida com o caso em que email ou senha é nulo ou vazio
-            Toast.makeText(this@LoginActivity, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@LoginActivity, "Preencha todos os campos", Toast.LENGTH_SHORT)
+                .show()
             return
         }
-        viewModel.userSign(email, password )
+        viewModel.userSign(email, password)
     }
 
     override fun onStart() {
         super.onStart()
         viewModel.currentUser()
-
-        viewModel.currentUser.observe(this@LoginActivity){ currentUser ->
-            if (currentUser){
-                    startActivity(Intent(this@LoginActivity,HomeAcitivity::class.java))
+        viewModel.currentUser.observe(this@LoginActivity) { currentUser ->
+            if (currentUser) {
+                startActivity(Intent(this@LoginActivity, HomeAcitivity::class.java))
             }
         }
     }

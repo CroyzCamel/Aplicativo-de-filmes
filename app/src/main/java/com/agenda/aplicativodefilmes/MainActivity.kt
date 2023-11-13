@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.core.content.ContextCompat
 import com.agenda.aplicativodefilmes.databinding.ActivityMainBinding
-import com.agenda.aplicativodefilmes.ui.Login.LoginActivity
+import com.agenda.aplicativodefilmes.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        window.statusBarColor = resources.getColor(R.color.bege_100)
+        window.statusBarColor = ContextCompat.getColor(this,R.color.bege_100)
 
-       
+
         //SplashScreen
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this@MainActivity, LoginActivity::class.java))

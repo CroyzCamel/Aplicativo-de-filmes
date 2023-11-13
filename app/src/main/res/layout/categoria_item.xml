@@ -9,12 +9,12 @@
         android:id="@+id/txtCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="@string/categoria_filme"
         android:textColor="@color/navy"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_margin="20dp" />
-    
+        android:textStyle="bold" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFIlmes"
         android:layout_width="match_parent"

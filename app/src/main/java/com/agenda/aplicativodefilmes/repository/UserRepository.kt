@@ -7,17 +7,15 @@ import com.agenda.aplicativodefilmes.services.RegisterListener
 class UserRepository {
     val database = Database()
 
-    fun userSignRepository (email: String, password: String, listener: LoginListener){
+    fun userSignRepository(email: String, password: String, listener: LoginListener) {
         database.userSign(email, password, listener)
     }
 
-    fun userRegisterRepository(email: String,password: String,listener: RegisterListener){
+    fun userRegisterRepository(email: String, password: String, listener: RegisterListener) {
         database.userRegister(email, password, listener)
     }
 
-    fun currentUserRepository(listener: LoginListener){
+    fun currentUserRepository(listener: LoginListener) {
         database.currentuser(listener)
     }
-
-
 }
